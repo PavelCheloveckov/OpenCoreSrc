@@ -1,0 +1,42 @@
+# Build artifacts
+*.obj
+*.exe
+*.pdb
+*.ilk
+*.idb
+*.log
+*.tlog
+*.recipe
+*.FileListAbsolute.txt
+*.CppClean.log
+*.applocal.log
+*.lastbuildstate
+
+# Visual Studio
+.vs/
+Debug/
+Release/
+x64/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.db
+*.ipch
+*.VC.db
+
+/QBSP/
+/QVIS/
+/QTPEdit/
+/WorldEdit/
+
+# Build
+/OpenCoreSrc/Debug/
+/OpenCoreSrc/x64/
+
+# ImGui configs
+imgui.ini
+worldedit.cfg
+config.cfg
+
+*.bat

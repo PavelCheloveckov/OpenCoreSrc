@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="opengoldsrc.vcxproj" Id="cf373305-1c7a-4e30-a027-50fff25170f6" />
+  <Project Path="QBSP/QBSP.vcxproj" Id="f382a591-d806-4bc9-9154-abf30a6ee75c" />
+  <Project Path="QTPEdit/QTPEdit.vcxproj" Id="103e4c9f-9411-4323-8b40-ea0bafecc1d0" />
+  <Project Path="QVIS/QVIS.vcxproj" Id="364e6b9a-8bf7-4304-a815-962cbe36fd7d" />
+  <Project Path="worldedit/WorldEdit/WorldEdit.vcxproj" Id="00ed5395-ad19-443e-9544-b93123bfd6be" />
+</Solution>

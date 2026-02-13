@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{f24497ec-ae89-40a6-8234-97f4a5c44079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mathlib">
+      <UniqueIdentifier>{afed0e7c-216f-468b-b37e-5b8f0029209a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{4f5f0a18-ff2d-4156-802f-2210edf22437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{9d4e11ec-325e-412c-a6b8-5a4e32eac679}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{acec361e-20e4-4774-932e-baab63f14811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem">
+      <UniqueIdentifier>{f4ef5149-5c72-4401-b83f-eac06d6472d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools">
+      <UniqueIdentifier>{ac31971b-e838-42a3-a1fd-d786d7c5bad6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\renderer">
+      <UniqueIdentifier>{d4c1393a-cc07-4345-b4a6-14404561a849}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\client">
+      <UniqueIdentifier>{09c5a456-466d-4280-bf0a-540f5c0d07e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\input">
+      <UniqueIdentifier>{3522410c-3d90-4552-adac-c3a6cff0e6fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\sound">
+      <UniqueIdentifier>{9ca6997d-dbb7-40ef-aeaf-c93c9263ac04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine\system">
+      <UniqueIdentifier>{90b66ab8-7738-4d9f-a817-9cf910ff3ec8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mathlib\mathlib.h">
+      <Filter>mathlib</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\cmd.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\common.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\console.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="server\server.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\bsp.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\wad.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\renderer\gl_local.h">
+      <Filter>engine\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\client\client.h">
+      <Filter>engine\client</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\keys.h">
+      <Filter>engine\input</Filter>
+    </ClInclude>
+    <ClInclude Include="common\entity_state.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="common\quakedef.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="server\progs.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="network\net.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\cvar.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\pak.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="server\sv_trigger.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\mdl.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="engine\input\in.h">
+      <Filter>engine\input</Filter>
+    </ClInclude>
+    <ClInclude Include="filesystem\qtp.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="mathlib\mathlib.c">
+      <Filter>mathlib</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\cvar.c">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\cmd.c">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\common.c">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\console.c">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_main.c">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_phys.c">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_user.c">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_chan.c">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\bsp.c">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\wad.c">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_main.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_texture.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_draw.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_world.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\cl_main.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\in_main.c">
+      <Filter>engine\input</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\sound\snd_main.c">
+      <Filter>engine\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\system\sys_win.c">
+      <Filter>engine\system</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\keys.c">
+      <Filter>engine\input</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\cl_view.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\cl_pred.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\cl_parse.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\cl_input.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_move.c">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="network\net_win.c">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\host.c">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\pak.c">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\image_loader.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="server\sv_trigger.c">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_sky.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_lightmap.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_surf.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\mdl.c">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_alias.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_entity.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\input\in_move.c">
+      <Filter>engine\input</Filter>
+    </ClCompile>
+    <ClCompile Include="filesystem\qtp.c">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\cl_hud.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\client\menu.c">
+      <Filter>engine\client</Filter>
+    </ClCompile>
+    <ClCompile Include="engine\renderer\gl_vbo.c">
+      <Filter>engine\renderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

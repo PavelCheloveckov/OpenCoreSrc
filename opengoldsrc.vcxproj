@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cf373305-1c7a-4e30-a027-50fff25170f6}</ProjectGuid>
+    <RootNamespace>opengoldsrc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>OpenCoreSrc</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)common;$(ProjectDir)engine;$(ProjectDir)mathlib;$(ProjectDir)filesystem;$(ProjectDir)network;$(ProjectDir)server;$(ProjectDir)engine\client;$(ProjectDir)engine\renderer;$(ProjectDir)engine\input;$(ProjectDir)engine\sound;$(ProjectDir)engine\system</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);ws2_32.lib;opengl32.lib;glu32.lib;winmm.lib;ws2_32.lib</AdditionalDependencies>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)common;$(ProjectDir)engine;$(ProjectDir)mathlib;$(ProjectDir)filesystem;$(ProjectDir)network;$(ProjectDir)server;$(ProjectDir)engine\client;$(ProjectDir)engine\renderer;$(ProjectDir)engine\input;$(ProjectDir)engine\sound;$(ProjectDir)engine\system</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);ws2_32.lib;opengl32.lib;glu32.lib;winmm.lib;ws2_32.lib</AdditionalDependencies>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)common;$(ProjectDir)engine;$(ProjectDir)mathlib;$(ProjectDir)filesystem;$(ProjectDir)network;$(ProjectDir)server;$(ProjectDir)engine\client;$(ProjectDir)engine\renderer;$(ProjectDir)engine\input;$(ProjectDir)engine\sound;$(ProjectDir)engine\system</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);ws2_32.lib;opengl32.lib;glu32.lib;winmm.lib;ws2_32.lib</AdditionalDependencies>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)common;$(ProjectDir)engine;$(ProjectDir)mathlib;$(ProjectDir)filesystem;$(ProjectDir)network;$(ProjectDir)server;$(ProjectDir)engine\client;$(ProjectDir)engine\renderer;$(ProjectDir)engine\input;$(ProjectDir)engine\sound;$(ProjectDir)engine\system</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>$(CoreLibraryDependencies);ws2_32.lib;opengl32.lib;glu32.lib;winmm.lib;ws2_32.lib</AdditionalDependencies>
+      <EntryPointSymbol>WinMainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="common\entity_state.h" />
+    <ClInclude Include="common\quakedef.h" />
+    <ClInclude Include="engine\client\client.h" />
+    <ClInclude Include="engine\cmd.h" />
+    <ClInclude Include="engine\common.h" />
+    <ClInclude Include="engine\console.h" />
+    <ClInclude Include="engine\cvar.h" />
+    <ClInclude Include="engine\input\in.h" />
+    <ClInclude Include="engine\input\keys.h" />
+    <ClInclude Include="engine\renderer\gl_local.h" />
+    <ClInclude Include="filesystem\bsp.h" />
+    <ClInclude Include="filesystem\mdl.h" />
+    <ClInclude Include="filesystem\pak.h" />
+    <ClInclude Include="filesystem\qtp.h" />
+    <ClInclude Include="filesystem\wad.h" />
+    <ClInclude Include="mathlib\mathlib.h" />
+    <ClInclude Include="network\net.h" />
+    <ClInclude Include="server\progs.h" />
+    <ClInclude Include="server\server.h" />
+    <ClInclude Include="server\sv_trigger.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="engine\client\cl_hud.c" />
+    <ClCompile Include="engine\client\cl_input.c" />
+    <ClCompile Include="engine\client\cl_main.c" />
+    <ClCompile Include="engine\client\cl_parse.c" />
+    <ClCompile Include="engine\client\cl_pred.c" />
+    <ClCompile Include="engine\client\cl_view.c" />
+    <ClCompile Include="engine\client\menu.c" />
+    <ClCompile Include="engine\cmd.c" />
+    <ClCompile Include="engine\common.c" />
+    <ClCompile Include="engine\console.c" />
+    <ClCompile Include="engine\cvar.c" />
+    <ClCompile Include="engine\host.c" />
+    <ClCompile Include="engine\input\in_main.c" />
+    <ClCompile Include="engine\input\in_move.c" />
+    <ClCompile Include="engine\input\keys.c" />
+    <ClCompile Include="engine\renderer\gl_alias.c" />
+    <ClCompile Include="engine\renderer\gl_draw.c" />
+    <ClCompile Include="engine\renderer\gl_entity.c" />
+    <ClCompile Include="engine\renderer\gl_lightmap.c" />
+    <ClCompile Include="engine\renderer\gl_main.c" />
+    <ClCompile Include="engine\renderer\gl_sky.c" />
+    <ClCompile Include="engine\renderer\gl_surf.c" />
+    <ClCompile Include="engine\renderer\gl_texture.c" />
+    <ClCompile Include="engine\renderer\gl_vbo.c" />
+    <ClCompile Include="engine\renderer\gl_world.c" />
+    <ClCompile Include="engine\renderer\image_loader.c" />
+    <ClCompile Include="engine\sound\snd_main.c" />
+    <ClCompile Include="engine\system\sys_win.c" />
+    <ClCompile Include="filesystem\bsp.c" />
+    <ClCompile Include="filesystem\mdl.c" />
+    <ClCompile Include="filesystem\pak.c" />
+    <ClCompile Include="filesystem\qtp.c" />
+    <ClCompile Include="filesystem\wad.c" />
+    <ClCompile Include="mathlib\mathlib.c" />
+    <ClCompile Include="network\net_chan.c" />
+    <ClCompile Include="network\net_win.c" />
+    <ClCompile Include="server\sv_main.c" />
+    <ClCompile Include="server\sv_move.c" />
+    <ClCompile Include="server\sv_phys.c" />
+    <ClCompile Include="server\sv_trigger.c" />
+    <ClCompile Include="server\sv_user.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
