@@ -11,10 +11,11 @@
 *.CppClean.log
 *.applocal.log
 *.lastbuildstate
+*.map
+*.qmf
 
 # Visual Studio
 .vs/
-Debug/
 Release/
 x64/
 *.user

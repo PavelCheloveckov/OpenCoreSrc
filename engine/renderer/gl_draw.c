@@ -118,15 +118,15 @@ void Draw_Init(void)
         Con_Printf("Palette loaded\n");
     }
     else {
-        // Генерируем серую палитру, если файла нет
         for (int i = 0; i < 256; i++) {
             host_basepal[i * 3 + 0] = i;
             host_basepal[i * 3 + 1] = i;
             host_basepal[i * 3 + 2] = i;
         }
     }
-    if (pal) free(pal); // или COM_FreeFile
+    if (pal) free(pal);
 
+    // Console font provided by LibreQuake project
     char_texture = GL_LoadFontImage("gfx/conchars.png");
     Con_Printf("FONT TEX ID = %d\n", char_texture);
     tex_conback = Draw_LoadLump("gfx/conback.lmp");
@@ -150,11 +150,6 @@ void GL_Set2D(void)
     glLoadIdentity();
     glDisable(GL_DEPTH_TEST);
     glDisable(GL_CULL_FACE);
-}
-
-void Draw_Menu(void)
-{
-    // Пока пусто
 }
 
 void Draw_Fill(int x, int y, int w, int h, int r, int g, int b, int a)
@@ -267,12 +262,9 @@ void Con_Draw(void)
     glEnable(GL_TEXTURE_2D);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-
-    // ═══ ВОТ ЭТО КЛЮЧЕВОЕ ═══
     glTexEnvi(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
 
-    // Принудительный сброс кеша текстур -
-    // привязываем НАПРЯМУЮ, минуя GL_Bind()
+    // Принудительный сброс кеша текстур
     glBindTexture(GL_TEXTURE_2D, 0);
 
     glDepthMask(GL_TRUE);
@@ -291,7 +283,6 @@ void Con_Draw(void)
     // === ФОН ===
     if (tex_conback)
     {
-        // НАПРЯМУЮ привязываем, не через GL_Bind!
         glBindTexture(GL_TEXTURE_2D, tex_conback);
         glBegin(GL_QUADS);
         glTexCoord2f(0, 0); glVertex2i(0, 0);
@@ -320,7 +311,6 @@ void Con_Draw(void)
     int rows = height / char_size;
     int y = height - char_size;
 
-    // НАПРЯМУЮ привязываем шрифт!
     glBindTexture(GL_TEXTURE_2D, char_texture);
     glColor4f(1, 1, 1, 1);
 
