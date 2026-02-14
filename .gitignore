@@ -31,7 +31,6 @@ x64/
 /WorldEdit/
 
 # Build
-/OpenCoreSrc/Debug/
 /OpenCoreSrc/x64/
 
 # ImGui configs
